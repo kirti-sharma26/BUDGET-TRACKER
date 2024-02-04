@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Chart.js library -->
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Budget Tracker</h1>
+        <div class="balance">
+            <h2>Total Balance: <span id="balance">0.00</span></h2>
+        </div>
+        <div class="form">
+            <label for="type">Type:</label>
+            <select id="type">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="Category">Category</option>
+                <option value="GROCERY">GROCERY</option>
+                <option value="FOOD">FOOD</option>
+                <option value="STATIONARY">STATIONARY</option>
+                <option value="TRAVEL">TRAVEL</option>
+                <option value="SHOPING">SHOPING</option>
+                <option value="ENTERTAINMENT">ENTERTAINMENTS</option>
+                <option value="OTHERS">OTHERS</option>
+                <!-- Categories will be populated dynamically -->
+            </select>
+            <button id="addTransaction">Add Transaction</button>
+        </div>
+        <div class="transactions">
+            <h2>Transaction History</h2>
+            <ul id="transactionList"></ul>
+        </div>
+        <div class="categories">
+            <h2>Categories Expenses</h2>
+            <ul id="categories"></ul>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
